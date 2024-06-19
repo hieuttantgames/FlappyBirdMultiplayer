@@ -80,6 +80,16 @@
   <script src="https://h5.ant.games/js/in-head-tag" async></script>
 
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
+    .kjasdfjklahsfd {
+      display: none;
+    }
+
     @media screen and (orientation: portrait) and (max-width: 500px) {
       #unity-container {
         width: 100vw;
@@ -91,11 +101,49 @@
       #unity-fullscreen-button {
         display: none;
       }
-      
+      .kjasdfjklahsfd {
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .qlwkencviowqef {
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 320px;
+        display: flex;
+        justify-content: center; 
+      }
+      .qlwkencviowqef .ad_320x100 {
+          width: 320px;
+          height: 100px;
+          background-color: #dfdfdf3d;
+      }
+      .qlwkencviowqef .text {
+        position: absolute;
+        font-size: 9px;
+        right: -10px;
+        top: 50%;
+        transform: rotate(90deg) translateX(50%) translate(-5px, 0px);
+        transform-origin: center right;
+
+      }
     }
   </style>
   </head>
   <body class="dark">
+    <div class="kjasdfjklahsfd">
+      <div class="qlwkencviowqef">
+        <div class="ad_320x100">
+
+        </div>
+        <div class="text">ADVERTISEMENT</div>
+      </div>
+      
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
     </div>
@@ -175,5 +223,6 @@
       };
       document.body.appendChild(script);
     </script>
+    <script src="https://h5.ant.games/3bc34af93decbc420700ff4657502f3e/js-a-ant-games-v2"></script>
   </body>
 </html>
