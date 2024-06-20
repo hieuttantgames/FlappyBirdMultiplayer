@@ -168,7 +168,7 @@ body {
     transform: translateX(-50%);
     transform-origin: center right;
 }
-@media screen and (max-height: 889.9px) {
+@media screen and (max-height: 879.9px) {
     .j3nni32kj234kjad_300x600 .ad_300x600{
         display: none
     }
@@ -176,7 +176,7 @@ body {
         display: block
     }
 }
-@media screen and (min-height: 890px) {
+@media screen and (min-height: 880px) {
     .j3nni32kj234kjad_300x600 .ad_300x600{
         display: block
     }
@@ -185,7 +185,7 @@ body {
         display: none
     }
 }
-@media screen and (min-height: 890px) {
+@media screen and (min-height: 880px) {
     .j3nni32kj234kjad_300x600 .ad_300x250{
         display: none
     }
