@@ -202,6 +202,9 @@ body {
   }
 
   @media screen and (orientation: portrait) and (max-width: 500px) {
+    .j3nni32kj234kjad_300x250{
+        display: none;
+    }
     .j3nni32kj234kj{
         display: none;
     }
