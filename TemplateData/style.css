@@ -185,7 +185,7 @@ body {
         display: none
     }
 }
-@media screen and (min-height: 880px) {
+@media screen and (max-height: 520px) {
     .j3nni32kj234kjad_300x600 .ad_300x250{
         display: none
     }
