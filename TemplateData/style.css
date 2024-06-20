@@ -14,8 +14,11 @@ canvas {
 body {
     margin: 0;
 }
+
+
+
 #unity-container {
-    width: 100%;
+    width:100%;
     height: 100%;
 }
 #unity-canvas {
@@ -103,4 +106,127 @@ body {
   }
 }
 
+.game {
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width:calc(100% - 300px);
+    height: 100%;
+}
 
+
+.j3nni32kj234kjad_300x250{
+    position: absolute;
+    width: 300px;
+    height: 270px;
+}
+
+.j3nni32kj234kjad_300x250 .ad_300x250 {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 250px;
+    background-color: #a3a3a33d;
+}
+
+.j3nni32kj234kjad_300x250 .text {
+    position: absolute;
+    font-size: 10px;
+    left: 50%;
+    top: 255px;
+    transform: translateX(-50%);
+    transform-origin: center right;
+}
+
+.j3nni32kj234kjad_300x600{
+    position: absolute;
+    top: 270px;
+    width: 300px;
+    height: 620px;
+}
+
+.j3nni32kj234kjad_300x600 .ad_300x600 {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 600px;
+    background-color: #a3a3a33d;
+}
+
+.j3nni32kj234kjad_300x600 .text {
+    position: absolute;
+    font-size: 10px;
+    left: 50%;
+    top: 605px;
+    transform: translateX(-50%);
+    transform-origin: center right;
+}
+@media screen and (max-height: 889.9px) {
+    .j3nni32kj234kjad_300x600{
+        display: none
+    }
+}
+@media screen and (min-height: 890px) {
+    .j3nni32kj234kjad_300x600{
+        display: block
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+  .kjasdfjklahsfd {
+    display: none;
+  }
+
+  @media screen and (orientation: portrait) and (max-width: 500px) {
+    .j3nni32kj234kj{
+        display: none;
+    }
+    .game {
+      width: 100vw;
+      height: calc(100dvh - 66px);
+      position: absolute;
+      top: 66px;
+      left: 0;
+    }
+    #unity-fullscreen-button {
+      display: none;
+    }
+    .kjasdfjklahsfd {
+      position: absolute;
+      top: 0;
+      height: 66px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .qlwkencviowqef {
+      position: absolute;
+      top: 0;
+      height: 66px;
+      width: 320px;
+      display: flex;
+      justify-content: center; 
+    }
+    .qlwkencviowqef .ad_320x50 {
+        position: absolute;
+        top: 16px;
+        width: 320px;
+        height: 50px;
+        background-color: #a3a3a33d;
+    }
+    .qlwkencviowqef .text {
+      position: absolute;
+      font-size: 9px;
+      left: 50%;
+
+      top: 3px;
+      transform: translateX(-50%);
+      transform-origin: center right;
+
+    }
+  }

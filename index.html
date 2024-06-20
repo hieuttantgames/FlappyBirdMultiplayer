@@ -36,36 +36,41 @@
   _antgamesSDK.tagAutoReward = "04D2-1550-1ED5-183B";
   
   
-  
   _antgamesSDK.bannerConfig["04D2-1550-1ED4-183C"] = {
-      tagId: "pw_19844",
-      customKey: "2047_04D2-1550-1ED4-183C"
-    };
-  
-  
-  _antgamesSDK.bannerConfig["04D2-1550-1ED4-183D"] = {
-      tagId: "pw_19846",
-      customKey: "2047_04D2-1550-1ED4-183D"
-    };
-  
-  
-  _antgamesSDK.bannerConfig["04D2-1550-1ED4-183E"] = {
-      tagId: "pw_19849",
-      customKey: "2047_04D2-1550-1ED4-183E"
-    };
-  
-  
-  _antgamesSDK.bannerConfig["04D2-1550-1ED4-183F"] = {
-      tagId: "pw_19847",
-      customKey: "2047_04D2-1550-1ED4-183F"
-    };
-  
-  
-  _antgamesSDK.bannerConfig["04D2-1550-1ED4-185C"] = {
-      tagId: "pw_19845",
-      customKey: "2047_04D2-1550-1ED4-185C"
-    };
-  
+    tagId: "pw_19844",
+    customKey: "2047_04D2-1550-1ED4-183C"
+  };
+
+
+_antgamesSDK.bannerConfig["04D2-1550-1ED4-183D"] = {
+    tagId: "pw_19846",
+    customKey: "2047_04D2-1550-1ED4-183D"
+  };
+
+
+_antgamesSDK.bannerConfig["04D2-1550-1ED4-183E"] = {
+    tagId: "pw_19849",
+    customKey: "2047_04D2-1550-1ED4-183E"
+  };
+
+
+_antgamesSDK.bannerConfig["04D2-1550-1ED4-183F"] = {
+    tagId: "pw_19847",
+    customKey: "2047_04D2-1550-1ED4-183F"
+  };
+
+
+_antgamesSDK.bannerConfig["04D2-1550-1ED4-185C"] = {
+    tagId: "pw_19845",
+    customKey: "2047_04D2-1550-1ED4-185C"
+  };
+
+
+_antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
+    tagId: "pw_19848",
+    customKey: "2047_04D2-1550-1ED4-185F"
+  };
+
   
   
   
@@ -79,83 +84,46 @@
   <script src="https://h5.ant.games/js/pubpower"></script>
   <script src="https://h5.ant.games/js/in-head-tag" async></script>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #ffffff;
-    }
-    .kjasdfjklahsfd {
-      display: none;
-    }
-
-    @media screen and (orientation: portrait) and (max-width: 500px) {
-      #unity-container {
-        width: 100vw;
-        height: calc(100dvh - 100px);
-        position: absolute;
-        top: 100px;
-        left: 0;
-      }
-      #unity-fullscreen-button {
-        display: none;
-      }
-      .kjasdfjklahsfd {
-        position: absolute;
-        top: 0;
-        height: 100px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      }
-      .qlwkencviowqef {
-        position: absolute;
-        top: 0;
-        height: 100px;
-        width: 320px;
-        display: flex;
-        justify-content: center; 
-      }
-      .qlwkencviowqef .ad_320x100 {
-          width: 320px;
-          height: 100px;
-          background-color: #dfdfdf3d;
-      }
-      .qlwkencviowqef .text {
-        position: absolute;
-        font-size: 9px;
-        right: -10px;
-        top: 50%;
-        transform: rotate(90deg) translateX(50%) translate(-5px, 0px);
-        transform-origin: center right;
-
-      }
-    }
-  </style>
   </head>
   <body class="dark">
     <div class="kjasdfjklahsfd">
       <div class="qlwkencviowqef">
-        <div class="ad_320x100">
+        <div class="ad_320x50">
 
         </div>
         <div class="text">ADVERTISEMENT</div>
+        
       </div>
       
     </div>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
-    </div>
-    <div id="loading-cover" style="display:none;">
-      <div id="unity-loading-bar">
-        <div id="unity-logo"><img src="logo.png"></div>
-        <div id="unity-progress-bar-empty" style="display: none;">
-          <div id="unity-progress-bar-full"></div>
+    
+    <div class="j3nni32kj234kjad_300x250">
+        <div class="ad_300x250">
         </div>
-        <div class="spinner"></div>
+        <div class="text">ADVERTISEMENT</div>
+    </div>
+    <div class="j3nni32kj234kjad_300x600">
+      <div class="ad_300x600">
+      </div>
+      <div class="text">ADVERTISEMENT</div>
+    </div>
+
+    <div class="game">
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas"></canvas>
+      </div>
+      <div id="loading-cover" style="display:none;">
+        <div id="unity-loading-bar">
+          <div id="unity-logo"><img src="logo.png"></div>
+          <div id="unity-progress-bar-empty" style="display: none;">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+          <div class="spinner"></div>
+        </div>
       </div>
     </div>
+    
+
     <div id="unity-fullscreen-button" style="display: none;"></div>
     <script>
       const hideFullScreenButton = "1";
