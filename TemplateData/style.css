@@ -152,6 +152,13 @@ body {
     height: 600px;
     background-color: #a3a3a33d;
 }
+.j3nni32kj234kjad_300x600 .ad_300x250 {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 250px;
+    background-color: #a3a3a33d;
+}
 
 .j3nni32kj234kjad_300x600 .text {
     position: absolute;
@@ -162,13 +169,25 @@ body {
     transform-origin: center right;
 }
 @media screen and (max-height: 889.9px) {
-    .j3nni32kj234kjad_300x600{
+    .j3nni32kj234kjad_300x600 .ad_300x600{
+        display: none
+    }
+    .j3nni32kj234kjad_300x600 .ad_300x250{
+        display: block
+    }
+}
+@media screen and (min-height: 890px) {
+    .j3nni32kj234kjad_300x600 .ad_300x600{
+        display: block
+    }
+
+    .j3nni32kj234kjad_300x600 .ad_300x250{
         display: none
     }
 }
 @media screen and (min-height: 890px) {
-    .j3nni32kj234kjad_300x600{
-        display: block
+    .j3nni32kj234kjad_300x600 .ad_300x250{
+        display: none
     }
 }
 
