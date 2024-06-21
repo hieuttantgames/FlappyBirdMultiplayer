@@ -114,7 +114,7 @@ body {
     height: 100%;
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1200px) {
     .game {
         left: 0;
         width: 100%;
