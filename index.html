@@ -197,18 +197,18 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
       window.addEventListener('message', function(event) {
         console.log("Message received from the parent: " + event.data); // Message received from parent
         if (event.data === 'parent-open-fullscreen') {
-          document.querySelector("#ad1").classList.remove("hide");
-          document.querySelector("#ad2").classList.remove("hide");
+          document.querySelector("#ad1").classList.remove("hiden");
+          document.querySelector("#ad2").classList.remove("hiden");
           document.querySelector("#game").classList.remove("game-fullscreen");
         } else if (event.data === 'parent-close-fullscreen') {
-          document.querySelector("#ad1").classList.add("hide");
-          document.querySelector("#ad2").classList.add("hide");
+          document.querySelector("#ad1").classList.add("hiden");
+          document.querySelector("#ad2").classList.add("hiden");
           document.querySelector("#game").classList.add("game-fullscreen");
         }
       });
       if (sessionStorage.getItem('iframe') == 1) {
-        document.querySelector("#ad1").classList.add("hide");
-        document.querySelector("#ad2").classList.add("hide");
+        document.querySelector("#ad1").classList.add("hiden");
+        document.querySelector("#ad2").classList.add("hiden");
         document.querySelector("#game").classList.add("game-fullscreen");
       }
     </script>

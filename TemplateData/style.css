@@ -115,6 +115,7 @@ body {
 }
 .game-fullscreen {
     width: 100% !important;
+    left: 0 !important;
 }
 
 @media screen and (max-width: 1200px) {
