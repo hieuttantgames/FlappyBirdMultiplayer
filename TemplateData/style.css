@@ -277,7 +277,6 @@ body {
         align-items: center;
         background: #fff;
         border-radius: 0 16px 16px 0;
-        box-shadow: var(--shadow-mid);
         display: flex;
         height: 46px;
         overflow: hidden;
