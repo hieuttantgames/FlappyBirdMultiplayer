@@ -193,5 +193,10 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
       document.body.appendChild(script);
     </script>
     <script src="https://h5.ant.games/3bc34af93decbc420700ff4657502f3e/js-a-ant-games-v2"></script>
+    <script>
+      window.addEventListener('message', function(event) {
+        console.log("Message received from the parent: " + event.data); // Message received from parent
+      });
+    </script>
   </body>
 </html>
