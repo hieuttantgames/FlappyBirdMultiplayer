@@ -192,6 +192,16 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
       };
       document.body.appendChild(script);
     </script>
+    <script>
+      var url_string = document.location.href; 
+      var url = new URL(url_string);
+      var c = url.searchParams.get("iframe");
+      if (sessionStorage.getItem('iframe') == 1 || c == 1) {
+        document.querySelector("#ad1").classList.add("hiden");
+        document.querySelector("#ad2").classList.add("hiden");
+        document.querySelector("#game").classList.add("game-fullscreen");
+      }
+    </script>
     <script src="https://h5.ant.games/3bc34af93decbc420700ff4657502f3e/js-a-ant-games-v2"></script>
     <script>
       window.addEventListener('message', function(event) {
@@ -200,17 +210,13 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
           document.querySelector("#ad1").classList.remove("hiden");
           document.querySelector("#ad2").classList.remove("hiden");
           document.querySelector("#game").classList.remove("game-fullscreen");
-        } else if (event.data === 'parent-close-fullscreen') {
+        } else if (event.data === 'parent-exit-fullscreen') {
           document.querySelector("#ad1").classList.add("hiden");
           document.querySelector("#ad2").classList.add("hiden");
           document.querySelector("#game").classList.add("game-fullscreen");
         }
       });
-      if (sessionStorage.getItem('iframe') == 1) {
-        document.querySelector("#ad1").classList.add("hiden");
-        document.querySelector("#ad2").classList.add("hiden");
-        document.querySelector("#game").classList.add("game-fullscreen");
-      }
+      
     </script>
   </body>
 </html>
