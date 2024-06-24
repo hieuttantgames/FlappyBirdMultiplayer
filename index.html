@@ -97,19 +97,19 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
       
     </div>
     
-    <div class="j3nni32kj234kjad_300x250">
+    <div id="ad1" class="j3nni32kj234kjad_300x250">
         <div class="ad_300x250">
         </div>
         <div class="text">ADVERTISEMENT</div>
     </div>
-    <div class="j3nni32kj234kjad_300x600">
+    <div id="ad2" class="j3nni32kj234kjad_300x600">
       <div class="ad_300x600">
       </div>
       <div class="ad_300x250">
       </div>
     </div>
 
-    <div class="game">
+    <div id="game" class="game">
       <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas"></canvas>
       </div>
@@ -196,6 +196,15 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
     <script>
       window.addEventListener('message', function(event) {
         console.log("Message received from the parent: " + event.data); // Message received from parent
+        if (event.data === 'parent-open-fullscreen') {
+          document.querySelector("#ad1").classList.remove("hide");
+          document.querySelector("#ad2").classList.remove("hide");
+          document.querySelector("#game").classList.add("game-fullscreen");
+        } else if (event.data === 'parent-close-fullscreen') {
+          document.querySelector("#ad1").classList.add("hide");
+          document.querySelector("#ad2").classList.add("hide");
+          document.querySelector("#game").classList.remove("game-fullscreen");
+        }
       });
     </script>
   </body>
