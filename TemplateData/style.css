@@ -268,4 +268,23 @@ body {
       transform-origin: center right;
 
     }
-  }
+}
+@media screen and (max-height: 520px) {
+    .btn-back {
+        align-items: center;
+        background: #fff;
+        border-radius: 0 16px 16px 0;
+        box-shadow: var(--shadow-mid);
+        display: flex;
+        height: 46px;
+        overflow: hidden;
+        position: fixed;
+        top: 24px;
+        width: 62px;
+        z-index: 1001;
+    }
+    .btn-back .content-back {
+        align-items: center;
+        display: flex;
+    }
+}
