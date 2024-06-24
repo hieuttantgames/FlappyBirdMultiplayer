@@ -206,6 +206,11 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
           document.querySelector("#game").classList.remove("game-fullscreen");
         }
       });
+      if (sessionStorage.getItem('iframe') == 1) {
+        document.querySelector("#ad1").classList.add("hide");
+        document.querySelector("#ad2").classList.add("hide");
+        document.querySelector("#game").classList.remove("game-fullscreen");
+      }
     </script>
   </body>
 </html>
