@@ -269,6 +269,9 @@ body {
 
     }
 }
+.btn-back{
+    display: none
+}
 @media screen and (max-height: 520px) {
     .btn-back {
         align-items: center;
