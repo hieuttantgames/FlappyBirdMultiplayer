@@ -206,11 +206,11 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
     <script>
       window.addEventListener('message', function(event) {
         console.log("Message received from the parent: " + event.data); // Message received from parent
-        if (event.data === 'parent-open-fullscreen') {
+        if (event.data == 'parent-open-fullscreen') {
           document.querySelector("#ad1").classList.remove("hiden");
           document.querySelector("#ad2").classList.remove("hiden");
           document.querySelector("#game").classList.remove("game-fullscreen");
-        } else if (event.data === 'parent-exit-fullscreen') {
+        } else if (event.data == 'parent-exit-fullscreen') {
           document.querySelector("#ad1").classList.add("hiden");
           document.querySelector("#ad2").classList.add("hiden");
           document.querySelector("#game").classList.add("game-fullscreen");
