@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Flappy Bird Multiplayer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css?v=2">
+    <link rel="stylesheet" href="TemplateData/style.css?v=3">
     <link rel="canonical" href="https://ant.games/g/flappy-bird-multiplayer">
     <script>
       var _antgamesSDK = _antgamesSDK || {};
@@ -243,6 +243,7 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
       if (window.mobileCheck()) {
           setupBtnBackMobile();
       }
+      const gameContainer = document.getElementById('game');
       function setupBtnBackMobile() {
           console.log('setup mobile');
           const btnBack = document.getElementsByClassName('btn-back')[0];
@@ -261,9 +262,7 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
               gameContainer.removeEventListener('touchmove', onMove);
               e.preventDefault();
               if (stateBtn === "click") {
-                  document.body.style = "overflow:auto;";
-                  gameContainer.classList.remove('game-mobile');
-                  showPlayMobile();
+                  document.location.href = "https://ant.games/g/flappy-bird-multiplayer";
               }
               stateBtn = 'none';
           }
@@ -271,8 +270,8 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
           function onMove(e) {
               if (stateBtn === 'click' || stateBtn === 'move') {
                   const evt = e.type === 'touchmove' ? e.changedTouches[0] : e;
-                  if (evt.clientY - 23 >= 23 && evt.clientY - 23 < window.innerHeight * 9 / 10 - 23) {
-                      btnBack.style.top = Math.round(evt.clientY - 23) + 'px';
+                  if (evt.clientY - 23 >= 100 && evt.clientY - 23 < window.innerHeight - 30) {
+                      btnBack.style.top = Math.round(evt.clientY - 50) + 'px';
                       if (stateBtn !== 'move') {
                           stateBtn = 'move';
                       }
