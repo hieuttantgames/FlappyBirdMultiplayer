@@ -91,7 +91,7 @@ function showBannerAdsense() {
       { size: "300x600", dataAdSlot: "8852212916", device: 1 },
       { size: "160x600", dataAdSlot: "5654369781", device: 1 },
       { size: "300x250", dataAdSlot: "8601362672", device: 1 },
-      { size: "320x50", dataAdSlot: "5758283313", device: 1 },
+      { size: "320x50", dataAdSlot: "5758283313", device: 2 },
     //   { size: "728x90", dataAdSlot: "8740963470", device: 1 },
     //   { size: "320x100", dataAdSlot: "8972897767", device: 2 },
     ]),
