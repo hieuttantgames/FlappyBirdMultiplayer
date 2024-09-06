@@ -74,12 +74,7 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
   
   
   
-  var powerTag = powerTag || {};
-  (powerTag.Init = window.powerTag.Init || []).push(function () {
-      powerAPITag.initAdInGame("pw_20583", {
-          preroll: true,
-      });
-  });    window.IS_UNITYGAME = true;
+     window.IS_UNITYGAME = true;
       </script>
   <script src="https://h5.ant.games/js/pubpower"></script>
   <script src="https://h5.ant.games/js/in-head-tag" async></script>
@@ -211,7 +206,6 @@ _antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
         document.querySelector("#game").classList.add("game-fullscreen");
       }
     </script>
-    <script src="https://h5.ant.games/3bc34af93decbc420700ff4657502f3e/js-a-ant-games-v2"></script>
     <script>
       window.addEventListener('message', function(event) {
         console.log("Message received from the parent: " + event.data); // Message received from parent
