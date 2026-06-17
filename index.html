@@ -8,76 +8,33 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css?v=3">
     <link rel="canonical" href="https://ant.games/g/flappy-bird-multiplayer">
-    <script>
-      var _antgamesSDK = _antgamesSDK || {};
-      _antgamesSDK.sid = "4e682dcd-1229-4d78-a058-8bc447e33de6";
-  
-      _antgamesSDK.bannerConfig = _antgamesSDK.bannerConfig || {};
-      _antgamesSDK.rewardedConfig = _antgamesSDK.rewardedConfig || {};
-      _antgamesSDK.ingameConfig = _antgamesSDK.ingameConfig || {};
-  
-      ShowUnityLog = (e)=>{
-          console.log(e);
-      }
-  
-  _antgamesSDK.tagAutoReward = "";
-  
-  _antgamesSDK.ingameConfig["04D2-1550-1ED6-183A"] = {
-      tagId: "pw_20583",
-      customKey: ""
-    };
-  
-  
-  _antgamesSDK.rewardedConfig["04D2-1550-1ED5-183B"] = {
-     tagId: "pw_20583",
-     customKey: "2047_04D2-1550-1ED5-183B"
-  };
-   
-  _antgamesSDK.tagAutoReward = "04D2-1550-1ED5-183B";
-  
-  
-  _antgamesSDK.bannerConfig["04D2-1550-1ED4-183C"] = {
-    tagId: "pw_19844",
-    customKey: "2047_04D2-1550-1ED4-183C"
-  };
+    
+<script>
+  const blacklistedUrls = ['ant_sdk.js'];
 
+const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+            // Kiểm tra nếu phần tử được thêm vào là thẻ script
+            if (node.tagName === 'SCRIPT' && node.src) {
+                // Nếu URL chứa từ khóa nằm trong danh sách đen
+                const isBlacklisted = blacklistedUrls.some(url => node.src.includes(url));
+                if (isBlacklisted) {
+                    node.type = 'text/plain'; // Đổi loại để trình duyệt không thực thi
+                    node.remove(); // Xóa bỏ thẻ khỏi DOM
+                    console.warn(`Đã chặn file JS: ${node.src}`);
+                }
+            }
+        });
+    });
+});
 
-_antgamesSDK.bannerConfig["04D2-1550-1ED4-183D"] = {
-    tagId: "pw_19846",
-    customKey: "2047_04D2-1550-1ED4-183D"
-  };
-
-
-_antgamesSDK.bannerConfig["04D2-1550-1ED4-183E"] = {
-    tagId: "pw_19849",
-    customKey: "2047_04D2-1550-1ED4-183E"
-  };
-
-
-_antgamesSDK.bannerConfig["04D2-1550-1ED4-183F"] = {
-    tagId: "pw_19847",
-    customKey: "2047_04D2-1550-1ED4-183F"
-  };
-
-
-_antgamesSDK.bannerConfig["04D2-1550-1ED4-185C"] = {
-    tagId: "pw_19845",
-    customKey: "2047_04D2-1550-1ED4-185C"
-  };
-
-
-_antgamesSDK.bannerConfig["04D2-1550-1ED4-185F"] = {
-    tagId: "pw_19848",
-    customKey: "2047_04D2-1550-1ED4-185F"
-  };
-
-  
-  
-  
-     window.IS_UNITYGAME = true;
-      </script>
-  <script src="https://h5.ant.games/js/pubpower"></script>
-  <script src="https://h5.ant.games/js/in-head-tag" async></script>
+// Bắt đầu theo dõi toàn bộ tài liệu trang web
+observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+});
+</script>
 
   </head>
   <body class="dark">
