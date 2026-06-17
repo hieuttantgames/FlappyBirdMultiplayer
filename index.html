@@ -9,32 +9,7 @@
     <link rel="stylesheet" href="TemplateData/style.css?v=3">
     <link rel="canonical" href="https://ant.games/g/flappy-bird-multiplayer">
     
-<script>
-  const blacklistedUrls = ['ant_sdk.js','adsbygoogle.js'];
 
-const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-        mutation.addedNodes.forEach((node) => {
-            // Kiểm tra nếu phần tử được thêm vào là thẻ script
-            if (node.tagName === 'SCRIPT' && node.src) {
-                // Nếu URL chứa từ khóa nằm trong danh sách đen
-                const isBlacklisted = blacklistedUrls.some(url => node.src.includes(url));
-                if (isBlacklisted) {
-                    node.type = 'text/plain'; // Đổi loại để trình duyệt không thực thi
-                    node.remove(); // Xóa bỏ thẻ khỏi DOM
-                    console.warn(`Đã chặn file JS: ${node.src}`);
-                }
-            }
-        });
-    });
-});
-
-// Bắt đầu theo dõi toàn bộ tài liệu trang web
-observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-});
-</script>
 
   </head>
   <body class="dark">
